@@ -1,3 +1,4 @@
+import { CadastroClientesComponent } from './../cadastro-clientes/cadastro-clientes.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -5,7 +6,7 @@ import { ContentComponent } from '../content/content.component';
 
 const routes: Routes = [
   { path: '', component: ContentComponent },
-  { path: 'cadastro', component: ContentComponent }
+  { path: 'cadastro-clientes', component: CadastroClientesComponent },
 ];
 
 @NgModule({
