@@ -7,6 +7,7 @@ import { ContentComponent } from './content/content.component';
 const routes: Routes = [
   { path: '', component: ContentComponent },
   { path: 'cadastro-clientes', component: CadastroClientesComponent },
+
 ];
 @NgModule({
   imports: [
