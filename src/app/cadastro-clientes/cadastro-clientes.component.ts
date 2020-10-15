@@ -8,6 +8,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CadastroClientesComponent implements OnInit {
   formCadastro
+  Cadastro
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
