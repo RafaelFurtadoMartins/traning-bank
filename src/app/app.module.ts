@@ -11,6 +11,9 @@ import { CadastroClientesComponent } from './cadastro-clientes/cadastro-clientes
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
+import { HomeLogadaComponent } from './home-logada/home-logada.component';
+import { AuthService } from 'auth.service';
+import { AuthGuard } from 'auth.guard';
 
 @NgModule({
   declarations: [
@@ -20,14 +23,17 @@ import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-conclu
     FooterComponent,
     CadastroClientesComponent,
     LoginComponent,
-    CadastroConcluidoComponent
+    CadastroConcluidoComponent,
+    HomeLogadaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AuthService,
+    AuthGuard 
 
 
   ],
