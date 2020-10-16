@@ -5,7 +5,9 @@ export class AuthGuard implements CanActivate {
 base_url: string;
 constructor(
 private authService: AuthService,
-private router: Router) { }
+private router: Router,
+private AuthGuard: AuthGuard
+) { }
 canActivate() {
 // Verifica se existe Token
 if (this.authService.isAuthenticated()) {
