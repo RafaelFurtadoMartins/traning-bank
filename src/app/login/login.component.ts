@@ -16,6 +16,9 @@ keys;
 getCadastro;
 message;
 openDialog;
+dialog;
+ModalNotCadastroComponent;
+
 constructor(
 private fb: FormBuilder,
 private router: Router) { }
@@ -45,8 +48,8 @@ this.router.navigate(['home-logada']);
 } else {
 this.openDialog();
 }
-openDialog() 
-const dialogRef = this.dialog.open(ModalNotCadastroComponent, {
+    this.openDialog() 
+const dialogRef = this.dialog.open(this.ModalNotCadastroComponent, {
 height: '350px'
 });
 dialogRef.afterClosed().subscribe(result => {
