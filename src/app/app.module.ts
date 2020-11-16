@@ -12,9 +12,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
 import { HomeLogadaComponent } from './home-logada/home-logada.component';
-import { AuthGuard } from './auth.guard';
-import { AuthService } from './auth.service';
-
+import { AuthGuard } from '../../auth.guard';
+import { AuthService } from '../../auth.service';
+import { AcessoNegadoComponent } from './acesso-negado/acesso-negado/acesso-negado.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { AuthService } from './auth.service';
     LoginComponent,
     CadastroConcluidoComponent,
     HomeLogadaComponent,
+    AcessoNegadoComponent,
     
   ],
   imports: [
@@ -33,12 +34,11 @@ import { AuthService } from './auth.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule,
-    AuthGuard,
-    AuthService
+    ReactiveFormsModule
+    
 
   ],
-  providers: [],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
