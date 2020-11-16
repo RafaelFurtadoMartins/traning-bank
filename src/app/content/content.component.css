@@ -42,11 +42,12 @@
 
 .btn-home-cadastro-clientes {
     position: absolute !important;
-    top: 390px;
+    top: 300px;
     padding: 20px;
     font-size: 25px;
     width: 40%;
     background: #000;
     color: #fff;
     border: 2px solid;
+    margin-left: 25cm;
 }
