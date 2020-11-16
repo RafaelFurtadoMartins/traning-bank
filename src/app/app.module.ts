@@ -12,6 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { CadastroConcluidoComponent } from './cadastro-concluido/cadastro-concluido.component';
 import { HomeLogadaComponent } from './home-logada/home-logada.component';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { HomeLogadaComponent } from './home-logada/home-logada.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AuthGuard,
+    AuthService
 
   ],
   providers: [],

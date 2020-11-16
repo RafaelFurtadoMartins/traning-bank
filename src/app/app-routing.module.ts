@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: '', component: ContentComponent },
   { path: 'cadastro-clientes', component: CadastroClientesComponent },
   { path: 'cadastro-concluido', component: CadastroConcluidoComponent },
-  { path: 'home-logada', component: HomeLogadaComponent, },
+  { path: 'home-logada', component: HomeLogadaComponent, canActivate: [AuthGuard]},
   { path: 'login', component: LoginComponent },
 ];
 @NgModule({
