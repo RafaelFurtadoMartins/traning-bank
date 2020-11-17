@@ -15,6 +15,7 @@ import { HomeLogadaComponent } from './home-logada/home-logada.component';
 import { AuthGuard } from '../../auth.guard';
 import { AuthService } from '../../auth.service';
 import { AcessoNegadoComponent } from './acesso-negado/acesso-negado/acesso-negado.component';
+import { BootstrapComponent } from './bootstrap/bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AcessoNegadoComponent } from './acesso-negado/acesso-negado/acesso-nega
     CadastroConcluidoComponent,
     HomeLogadaComponent,
     AcessoNegadoComponent,
+    BootstrapComponent,
     
   ],
   imports: [
