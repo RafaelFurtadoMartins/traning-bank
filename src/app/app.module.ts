@@ -16,8 +16,11 @@ import { AuthGuard } from '../../auth.guard';
 import { AuthService } from '../../auth.service';
 import { AcessoNegadoComponent } from './acesso-negado/acesso-negado/acesso-negado.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { MatSliderModule } from '@angular/material/slider';
 
+=======
+>>>>>>> parent of 166365c... add bootstrap
 =======
 >>>>>>> parent of 166365c... add bootstrap
 
