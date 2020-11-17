@@ -1,4 +1,3 @@
-import { BootstrapComponent } from './bootstrap/bootstrap.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
@@ -28,7 +27,6 @@ import { AcessoNegadoComponent } from './acesso-negado/acesso-negado/acesso-nega
     CadastroConcluidoComponent,
     HomeLogadaComponent,
     AcessoNegadoComponent,
-    BootstrapComponent,
     
   ],
   imports: [
